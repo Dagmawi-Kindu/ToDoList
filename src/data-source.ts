@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
-import { User } from './models/User';
+import { List } from './models/List';
 
 export const AppDataSource = new DataSource({
   type: 'mysql',
@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
   database: 'TodoApp',
   synchronize: true,
   logging: false,
-  entities: [User],
+  entities: [List],
   migrations: [],
   subscribers: [],
 });
